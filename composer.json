@@ -17,7 +17,7 @@
         "guzzlehttp/guzzle": "~6.0.0"
     },
     "autoload": {
-        "psr-4": { "Eko\\GoogleTranslateBundle\\": "" }
+        "psr-4": { "Sblmasta\\GoogleTranslateBundle\\": "" }
     },
     "extra": {
         "branch-alias": {
