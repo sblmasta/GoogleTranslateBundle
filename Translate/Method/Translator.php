@@ -173,12 +173,12 @@ class Translator extends Method implements MethodInterface
 
         $client = $this->getClient();
 
-        $event = $this->startProfiling(
-            $this->getName(),
-            $client->getDefaultOption('query'),
-            $client->getDefaultOption('source'),
-            $client->getDefaultOption('target')
-        );
+//        $event = $this->startProfiling(
+//            $this->getName(),
+//            $client->getDefaultOption('query'),
+//            $client->getDefaultOption('source'),
+//            $client->getDefaultOption('target')
+//        );
 
         $json = $client->get($this->url, ['query' => $options])->json();
 
@@ -188,7 +188,7 @@ class Translator extends Method implements MethodInterface
             $result = $current['translatedText'];
         }
 
-        $this->stopProfiling($event, $this->getName(), $result);
+//        $this->stopProfiling($event, $this->getName(), $result);
 
         return $result;
     }

@@ -3,7 +3,7 @@
     "type": "library",
     "description": "A Symfony bundle to deals with Google Translate API",
     "keywords": ["google", "translate", "bundle", "api", "detect", "language"],
-    "homepage": "http://github.com/eko/GoogleTranslateBundle",
+    "homepage": "http://github.com/sblmasta/GoogleTranslateBundle",
     "license": "MIT",
     "authors": [
         {
@@ -12,9 +12,9 @@
         }
     ],
     "require": {
-        "php": "^5.3|^7.0",
+        "php": "^5.5|^7.0",
         "symfony/framework-bundle": "^2.0|^3.0",
-        "guzzlehttp/guzzle": "~5.0"
+        "guzzlehttp/guzzle": "^6.0"
     },
     "autoload": {
         "psr-4": { "Eko\\GoogleTranslateBundle\\": "" }

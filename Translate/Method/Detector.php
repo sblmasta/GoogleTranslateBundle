@@ -65,7 +65,7 @@ class Detector extends Method implements MethodInterface
 
         $client = $this->getClient();
 
-        $event = $this->startProfiling($this->getName(), $client->getDefaultOption('query'));
+//        $event = $this->startProfiling($this->getName(), $client->getDefaultOption('query'));
 
         $json = $client->get($this->url, ['query' => $options])->json();
 
@@ -78,7 +78,7 @@ class Detector extends Method implements MethodInterface
             }
         }
 
-        $this->stopProfiling($event, $this->getName(), $result);
+//        $this->stopProfiling($event, $this->getName(), $result);
 
         return $result;
     }
